@@ -1,0 +1,49 @@
+// Section background colors
+.section {
+	text-align: center;
+}
+
+.section.home {
+	background-color: #4e4eb1;
+}
+
+.section.about {
+	background-color: #5858a7;
+}
+
+.section.work {
+	background-color: #62629d;
+}
+
+.section.contact {
+	background-color: #6c6c93;
+}
+
+/* Arrow animation */
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 1.5s infinite;
+  -webkit-animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Play around with these colors */
+/* http://www.color-hex.com/color-palette/40095
+http://www.color-hex.com/color-palette/40176 */
+
+/* http://www.color-hex.com/color-palette/41161*/
