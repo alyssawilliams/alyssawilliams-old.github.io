@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Alyssa's Portfolio</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Alyssa's Portfolio</title>
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<div id="fullpage">
-		<div class="section home">
-			<h1>Alyssa Williams</h1>
-			<span>Web Developer</span>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-			<div class="arrow bounce">
-			  <a class="fa fa-angle-down fa-3x" href="#"></a>
+		<!-- Full page js plugin CSS -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+
+	<!-- MARKUP -->
+		
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-fixed">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			    <ul class="nav navbar-nav navbar-right" id="menu">
+			      <li data-menuanchor="home"><a href="#home" class="home">Home</a></li>
+			      <li data-menuanchor="about"><a href="#about" class="about">About</a></li>
+			      <li data-menuanchor="work"><a href="#work" class="work">Work</a></li>
+			      <li data-menuanchor="contact"><a href="#contact" class="contact">Contact</a></li>
+			    </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<!-- Full page sections -->
+		<div id="fullpage">
+			<div class="section home">
+				<!-- TEMPLATE GOES HERE -->
+			</div>
+
+			<div class="section about">
+				<!-- TEMPLATE GOES HERE -->
+			</div>
+
+			<div class="section work">
+				<!-- TEMPLATE GOES HERE -->
+			</div>
+
+			<div class="section contact">
+				<!-- TEMPLATE GOES HERE -->
 			</div>
 		</div>
 
-		<div class="section about">Some section</div>
+		
+	<!-- SCRIPTS -->
 
-		<div class="section work">Some section</div>
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-		<div class="section contact">Some section</div>
-	</div>
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Full Page plugin -->
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<!-- Mustache -->
+		<script type="text/javascript" src="js/mustache.min.js"></script>
 
-	<script type="text/javascript" src="js/scripts.js"></script>
-</body>
+		<!-- Include Templates -->
+		<script type="text/javascript" src="js/template-includes.js"></script>
+
+		<!-- Custom scripts -->
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+	</body>
 </html>

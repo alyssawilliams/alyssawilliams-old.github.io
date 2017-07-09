@@ -1,3 +1,42 @@
 body {
+	margin: 0;
+	padding: 0;
 	color: white;
+	font-family: $body-font;
+	font-size: 18px;
+}
+
+.fp-section.fp-table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// Background colors
+@each $sectionName, $color in $color-palette {
+  .section.#{$sectionName} {
+    background-color: #{$color};
+  }
+}
+
+// > HEADINGS
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font, sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+.pageHeader h2 {
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+// > CONTENT
+
+.pageContent {
+	width: 745px;
 }

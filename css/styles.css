@@ -1,29 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Open+Sans:300,400,500,700,800|Raleway");
 body {
-  color: white; }
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 18px; }
 
-.section {
-  text-align: center; }
+.fp-section.fp-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .section.home {
-  background-color: #4e4eb1; }
+  background-color: #dc49a2; }
 
 .section.about {
-  background-color: #5858a7; }
+  background-color: #ca8ad6; }
 
 .section.work {
-  background-color: #62629d; }
+  background-color: #98b5f4; }
 
 .section.contact {
-  background-color: #6c6c93; }
+  background-color: #8be6f3; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin: 0; }
+
+.pageHeader h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+.pageContent {
+  width: 745px; }
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0; }
+
+.navbar-collapse {
+  box-shadow: none; }
+
+.navbar-nav > li {
+  padding: 10px 15px 5px; }
+
+.navbar-nav > li a {
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0; }
+
+.navbar a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-align: right; }
+
+.navbar-fixed .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent; }
+
+.nav > li > a:hover {
+  border-bottom: 2px solid #fff; }
+
+.collapse.in li > a:hover {
+  border-bottom: 0 !important;
+  font-weight: 700; }
+
+.nav > li.active a {
+  font-weight: bold;
+  outline: none; }
+
+.nav > li.active a.home {
+  color: #b6237c; }
+
+.nav > li > a.home:hover {
+  border-bottom: 2px solid #b6237c; }
+
+.nav > li.active a.about {
+  color: #b051c2; }
+
+.nav > li > a.about:hover {
+  border-bottom: 2px solid #b051c2; }
+
+.nav > li.active a.work {
+  color: #5383ed; }
+
+.nav > li > a.work:hover {
+  border-bottom: 2px solid #5383ed; }
+
+.nav > li.active a.contact {
+  color: #46d7ec; }
+
+.nav > li > a.contact:hover {
+  border-bottom: 2px solid #46d7ec; }
+
+.section.home.fp-section.fp-table {
+  justify-content: center; }
 
 /* Arrow animation */
-a {
-  color: white;
+a, a:link, a:visited, a:focus, a:hover, a:active {
+  color: #fff;
   text-decoration: none; }
 
 .arrow {
   text-align: center;
   margin: 8% 0; }
+
+.arrow:before {
+  cursor: pointer;
+  margin: 20px; }
 
 .bounce {
   -moz-animation: bounce 1.5s infinite;
@@ -36,9 +129,26 @@ a {
   50% {
     transform: translateY(-10px); } }
 
-/* Play around with these colors */
-/* http://www.color-hex.com/color-palette/40095
-http://www.color-hex.com/color-palette/40176 */
-/* http://www.color-hex.com/color-palette/41161*/
+.nameHeading, .titleHeading {
+  cursor: default; }
+
+.nameHeading {
+  font-size: 80px;
+  margin-top: 150px;
+  font-family: "Dawning of a New Day"; }
+
+.titleHeading {
+  font-size: 24px; }
+
+.contact i {
+  cursor: pointer; }
+
+.contact .fa-circle.icon-background {
+  color: white; }
+
+.contact .fa-stack-1x {
+  color: #8be6f3; }
+  .contact .fa-stack-1x:hover {
+    color: #2fd2e9; }
 
 /*# sourceMappingURL=styles.css.map */

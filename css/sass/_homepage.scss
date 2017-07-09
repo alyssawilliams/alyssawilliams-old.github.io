@@ -1,31 +1,22 @@
-// Section background colors
-.section {
-	text-align: center;
-}
-
-.section.home {
-	background-color: #4e4eb1;
-}
-
-.section.about {
-	background-color: #5858a7;
-}
-
-.section.work {
-	background-color: #62629d;
-}
-
-.section.contact {
-	background-color: #6c6c93;
+.section.home.fp-section.fp-table {
+ justify-content: center;
 }
 
 /* Arrow animation */
-
-a { color: white; text-decoration: none; }
+a {
+  &, &:link, &:visited, &:focus, &:hover,  &:active { 
+  color: #fff;
+  text-decoration: none;
+  }
+}
 
 .arrow {
   text-align: center;
   margin: 8% 0;
+}
+.arrow:before {
+  cursor: pointer;
+  margin: 20px;
 }
 .bounce {
   -moz-animation: bounce 1.5s infinite;
@@ -42,8 +33,17 @@ a { color: white; text-decoration: none; }
   }
 }
 
-/* Play around with these colors */
-/* http://www.color-hex.com/color-palette/40095
-http://www.color-hex.com/color-palette/40176 */
+// Homepage text
+.nameHeading, .titleHeading {
+  cursor: default;
+}
 
-/* http://www.color-hex.com/color-palette/41161*/
+.nameHeading {
+  font-size: 80px;
+  margin-top: 150px;
+  font-family: $name-font; 
+}
+
+.titleHeading {
+  font-size: 24px;
+}

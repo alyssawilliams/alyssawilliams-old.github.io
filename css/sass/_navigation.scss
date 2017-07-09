@@ -1,0 +1,67 @@
+// TODO: Fix collapsed vertical nav overlapping content
+// TODO: Tweak darker hover colors
+
+.navbar-fixed {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+}
+
+.navbar-collapse {
+	box-shadow: none;
+}
+
+.navbar-nav > li {
+  padding: 10px 15px 5px;
+}
+
+.navbar-nav > li a {
+	text-transform: uppercase;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar a {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.3px;
+  text-align: right;
+}
+
+// Burger menu icon
+.navbar-fixed .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: transparent;
+}
+
+// Regular nav hover state
+.nav > li > a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+// Collapsed menu hover state
+.collapse.in li > a:hover {
+	border-bottom: 0 !important;
+	font-weight: 700;
+}
+
+// Current page hover state
+.nav > li.active a {
+	font-weight: bold;
+	outline: none;
+}
+
+// Nav hover color scheme
+@each $sectionName, $color in $color-palette {
+  .nav > li.active a.#{$sectionName}  {
+    color: darken($color, 15%);
+  }
+
+  .nav > li > a.#{$sectionName}:hover {
+	border-bottom: 2px solid darken($color, 15%);
+  }
+}

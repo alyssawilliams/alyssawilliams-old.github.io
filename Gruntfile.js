@@ -11,31 +11,43 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'css/styles.css': 'css/sass/main.scss'
-				}
-			}
+				},
+			},
 		},
 		watch: {
-			livereload: {
-				options: {
-					base: 'css',
-				},
-				files: ['css/styles.css']
+			options: {
+				livereload: true,
 			},
-			scripts: {
-				files: 'css/sass/*.scss',
-				tasks: ['sass'],
-				options: {
-					debounceDelay: 250,
-					livereload: true,
-				},
+			css: {
+				files: ['css/sass/*.scss'],
+				tasks: ['sass']
 			},
-		},
+			js: {
+				files: ['js/**.js'],
+			},
+			html: {
+				files: ['*.html', 'templates/*.html'],
+			}
+		}
+	// livereload: {
+			// 	options: {
+			// 		base: 'css',
+			// 	},
+			// 	files: ['css/styles.css']
+			// },
+			// scripts: {
+			// 	files: 'css/sass/*.scss',
+			// 	tasks: ['sass'],
+			// 	options: {
+			// 		debounceDelay: 250,
+			// 		livereload: true,
+			// 	},
+			// },
+		
 		
 	});
-	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-livereload');
+	grunt.loadNpmTasks('grunt-sass');
 
-
-	grunt.registerTask('default', ['watch', 'livereload']);
+	grunt.registerTask('default', ['watch']);
 };

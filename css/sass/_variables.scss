@@ -1,6 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Open+Sans:300,400,500,700,800|Raleway');
+$name-font: 'Dawning of a New Day';
+$heading-font: 'Open Sans';
+$body-font: 'Open Sans';
+
+// Background colors
+$home: #dc49a2;
+$about: 	#ca8ad6;
+$work: #98b5f4;
+$contact: #8be6f3;
+
+// Color map
 $color-palette: (
-	home: #4e4eb1,
-	about: #5858a7,
-	work: #62629d,
-	contact: #6c6c93 
+	home: $home,
+	about: 	$about,
+	work: $work,
+	contact: $contact
 );
