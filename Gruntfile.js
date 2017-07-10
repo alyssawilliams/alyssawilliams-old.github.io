@@ -28,23 +28,7 @@ module.exports = function(grunt) {
 			html: {
 				files: ['*.html', 'templates/*.html'],
 			}
-		}
-	// livereload: {
-			// 	options: {
-			// 		base: 'css',
-			// 	},
-			// 	files: ['css/styles.css']
-			// },
-			// scripts: {
-			// 	files: 'css/sass/*.scss',
-			// 	tasks: ['sass'],
-			// 	options: {
-			// 		debounceDelay: 250,
-			// 		livereload: true,
-			// 	},
-			// },
-		
-		
+		}		
 	});
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-sass');
