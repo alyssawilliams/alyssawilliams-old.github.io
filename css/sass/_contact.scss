@@ -1,10 +1,12 @@
-// TODO: Make icons small at smaller screen sizes
-
 // Social media icons
 .contact {
 	i {  cursor: pointer; }
 	
 	.fa-circle.icon-background { color: white; }
+
+	.fa-stack {
+		font-size: 5em;
+	}
 
 	.fa-stack-1x {
 		color: $contact;

@@ -135,7 +135,8 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 .nameHeading {
   font-size: 80px;
   margin-top: 150px;
-  font-family: "Dawning of a New Day"; }
+  font-family: "Dawning of a New Day";
+  text-align: center; }
 
 .titleHeading {
   font-size: 24px; }
@@ -146,9 +147,25 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 .contact .fa-circle.icon-background {
   color: white; }
 
+.contact .fa-stack {
+  font-size: 5em; }
+
 .contact .fa-stack-1x {
   color: #8be6f3; }
   .contact .fa-stack-1x:hover {
     color: #2fd2e9; }
+
+@media only screen and (max-width: 785px) {
+  .nameHeading {
+    margin-top: 0; }
+  .pageContent {
+    width: 100%;
+    padding: 0 20px; }
+  .contact .pageContent {
+    text-align: center; }
+  .contact .fa-stack {
+    font-size: 3em; }
+  .pageHeader h2 {
+    margin-top: 75px; } }
 
 /*# sourceMappingURL=styles.css.map */
